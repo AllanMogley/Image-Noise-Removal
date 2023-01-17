@@ -3,11 +3,7 @@ import os
 print(os.getcwd())
 
 # Load the image
-img = cv2.imread(r"Me 2.png")
 img = cv2.imread(r"noisy.jpeg")
-
-
-
 
 # Convert the image to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
