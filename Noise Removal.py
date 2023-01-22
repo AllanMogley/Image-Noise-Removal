@@ -9,7 +9,7 @@ img = cv2.imread(r"noisy.jpeg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Create a kernel for the morphological operations
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (4, 4))
 
 # Apply the morphological opening to the image
 opening = cv2.morphologyEx(gray, cv2.MORPH_OPEN, kernel)
